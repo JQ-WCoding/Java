@@ -37,5 +37,11 @@ public class PrintfEx1 {
         System.out.printf("ten = [%05d]%n", ten);
         // bigNum 변수에 정수형으로 표현
         System.out.printf("bigNum = %d%n", bigNum);
+        System.out.printf("hex=%#x%n", hex); // '#'은 접두사
+        // octNum을 8진수와 10진수로 모두 표현하여 출력
+        System.out.printf("octNum = %o, %d%n", octNum, octNum);
+        System.out.printf("hexNum = %x, %d%n", hexNum, hexNum);
+        // 10진수를 2진수로 출력해주는 지시자가 없기에, 정수를 2진 문자로 변환 -> Integer.toBinaryString(int i)를 사용하여 문자열로 반환하고 다시 %s를 사용하여 출력
+        System.out.printf("binNum = %s, %d%n", Integer.toBinaryString(binNum), binNum);
     }
 }
