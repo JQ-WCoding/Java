@@ -1,4 +1,4 @@
-package Chapter2.ch2;
+package Chapter2.ch2.CharEx;
 
 public class CharToCode {
     public static void main(String[] args) {

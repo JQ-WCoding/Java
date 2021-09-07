@@ -1,4 +1,4 @@
-package Chapter2.ch2;
+package Chapter2.ch2.OverflowEx;
 
 public class OverflowEx {
     public static void main(String[] args) {
