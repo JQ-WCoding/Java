@@ -2,7 +2,13 @@ package Chapter6.ch6.param;
 
 public class ReferenceParamEx3 {
     public static void main(String[] args) {
+        int[] arr = {3, 2, 1, 6, 5, 4};
 
+        print(arr);
+        sort(arr);
+        print(arr);
+
+        System.out.println("sum : " + sum(arr));
     }
 
     /**
@@ -41,6 +47,7 @@ public class ReferenceParamEx3 {
 
     /**
      * 배열 오름차순 정렬하기
+     *
      * @param arr
      */
     static void sort(int[] arr) {

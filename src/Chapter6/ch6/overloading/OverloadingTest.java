@@ -7,7 +7,7 @@ public class OverloadingTest {
         System.out.println("add(4, 4) result : " + myMath.add(4, 4));
         System.out.println("add(4L, 4) result : " + myMath.add(4L, 4));
         System.out.println("add(4, 4L) result : " + myMath.add(4, 4L));
-        System.out.println("add(4L, 4:) result : " + myMath.add(4L, 4L));
+        System.out.println("add(4L, 4L) result : " + myMath.add(4L, 4L));
 
         // arr 배열 초기하
         int[] arr = {1, 2, 3, 4, 5};
