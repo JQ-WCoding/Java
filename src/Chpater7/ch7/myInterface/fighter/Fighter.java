@@ -1,5 +1,7 @@
 package Chpater7.ch7.myInterface.fighter;
 
+import Chpater7.ch7.myInterface.parserTest.Unit;
+
 public class Fighter extends Unit implements Fightable {
     /*
      오버라이딩 시 부모의 메소드 범위보다 넓은 접근 제어자를 지정해주어야한다.

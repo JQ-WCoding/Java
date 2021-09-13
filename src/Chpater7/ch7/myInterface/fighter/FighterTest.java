@@ -1,5 +1,8 @@
 package Chpater7.ch7.myInterface.fighter;
 
+import Chpater7.ch7.myInterface.parserTest.Movable;
+import Chpater7.ch7.myInterface.parserTest.Unit;
+
 public class FighterTest {
     public static void main(String[] args) {
         Fighter fighter = new Fighter();

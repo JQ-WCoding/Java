@@ -1,4 +1,4 @@
-package Chpater7.ch7.myInterface.fighter;
+package Chpater7.ch7.myInterface.parserTest;
 
 public class ParserManager {
     public static Parseable getParser(String type) {
