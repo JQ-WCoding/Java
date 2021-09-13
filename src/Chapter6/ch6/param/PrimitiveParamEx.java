@@ -33,7 +33,4 @@ public class PrimitiveParamEx {
     }
 }
 
-// Data 클래스에 정수형 x 선언
-class Data {
-    int x;
-}
+

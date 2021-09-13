@@ -21,24 +21,5 @@ public class CastingTest1 {
     }
 }
 
-class Car {
-    String color;
-    int door;
 
-    void drive() {
-        System.out.println("drive!");
-    }
-
-    void stop() {
-        System.out.println("Stop!!");
-    }
-}
-
-// Car 클래스를 상속받은 FireEngine
-class FireEngine extends Car {
-    // water 메소드의 사용 여부
-    void water() {
-        System.out.println("Water! ");
-    }
-}
 

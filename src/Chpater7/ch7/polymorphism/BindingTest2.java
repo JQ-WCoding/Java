@@ -19,5 +19,3 @@ public class BindingTest2 {
     }
 }
 
-class Child2 extends Parent {
-}

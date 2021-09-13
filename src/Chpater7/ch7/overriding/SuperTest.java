@@ -12,17 +12,5 @@ public class SuperTest {
     }
 }
 
-class Parent {
-    int x = 10;
-}
 
-class Child extends Parent {
-    /**
-     * 전체 출력문
-     */
-    void printAll() {
-        System.out.println("x = " + x);
-        System.out.println("this.x = " + this.x);
-        System.out.println("super.x = " + super.x);
-    }
-}
+

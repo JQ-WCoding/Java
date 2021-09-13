@@ -1,39 +1,6 @@
 package Chpater7.ch7.inheritance;
 
-class TV {
-    // 인스턴스 변수 power와 volume
-    boolean power;
-    int volume;
-
-    void power() {
-        power = !power;
-    }
-
-    void volumeUp() {
-        ++volume;
-    }
-
-    void volumeDown() {
-        --volume;
-    }
-
-}
-
-class VCR {
-    // 인스턴스 변수 power와 channel;
-    boolean power;
-    int channel = 0;
-
-    void play() {
-        ++channel;
-    }
-
-    void stop() {
-        --channel;
-    }
-}
-
-class TVCR extends TV {
+class TVCR extends Tv {
     /*
      VCR을 인스턴스화 하여 TV를 상속한과 같은 형식을 표현
      -> 그렇다면 TVCR.power = true로 변경한다면 TV의 인스턴스 변수인 power의 값이 초기화 되는 것
