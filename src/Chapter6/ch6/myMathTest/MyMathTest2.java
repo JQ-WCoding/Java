@@ -1,4 +1,4 @@
-package Chapter6.ch6.MyMathTest;
+package Chapter6.ch6.myMathTest;
 
 public class MyMathTest2 {
     public static void main(String[] args) {

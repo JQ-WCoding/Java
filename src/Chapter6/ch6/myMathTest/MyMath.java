@@ -1,4 +1,4 @@
-package Chapter6.ch6.MyMathTest;
+package Chapter6.ch6.myMathTest;
 
 public class MyMath {
     // 사칙연산 메소드

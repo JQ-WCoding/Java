@@ -1,4 +1,4 @@
-package Chapter6.ch6.TvTest;
+package Chapter6.ch6.tvTest;
 
 public class Tv {
     // 멤버 변수

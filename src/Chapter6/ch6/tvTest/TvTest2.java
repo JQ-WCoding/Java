@@ -1,4 +1,4 @@
-package Chapter6.ch6.TvTest;
+package Chapter6.ch6.tvTest;
 
 public class TvTest2 {
     public static void main(String[] args) {

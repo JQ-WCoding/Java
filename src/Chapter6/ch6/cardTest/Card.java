@@ -1,4 +1,4 @@
-package Chapter6.ch6.CardTest;
+package Chapter6.ch6.cardTest;
 
 public class Card {
     /*
