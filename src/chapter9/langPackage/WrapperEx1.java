@@ -19,7 +19,7 @@ public class WrapperEx1 {
         System.out.println("MAX_VALUE = " + Integer.MAX_VALUE); // int 의 최대값
         System.out.println("MIX_VALUE = " + Integer.MIN_VALUE); // int 의 최소값
         System.out.println("SIZE = " + Integer.SIZE + "bits"); // 비트 크기로 반환
-        System.out.println("BYTES = " + Integer.BYTES + "bytes"); // 바이트 크기러 반환
+        System.out.println("BYTES = " + Integer.BYTES + "bytes"); // 바이트 크기로 반환
         System.out.println("TYPE = " + Integer.TYPE); // 타입 반환
     }
 }
