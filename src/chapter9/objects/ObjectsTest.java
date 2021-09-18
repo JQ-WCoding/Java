@@ -38,6 +38,7 @@ public class ObjectsTest {
 
         Comparator comparator = String.CASE_INSENSITIVE_ORDER; // comparator 비교 관련 인터페이스 -> 하단과 같이 String 에 대해서 대문자로 맞추거나 소문자로 통일하는 조건문을 거쳐 대소문 관련없이 비교할 수 있도록 한다
         /*
+        String.CASE_INSENSITIVE_ORDER 내용
         char c1 = s1.charAt(i);
                 char c2 = s2.charAt(i);
                 if (c1 != c2) {
