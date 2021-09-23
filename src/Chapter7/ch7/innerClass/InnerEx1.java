@@ -4,7 +4,7 @@ public class InnerEx1 {
     // 클래스가 static 이 아니기에 내부 클래스의 경우엔 멤버변수 접근자로 static 사용 불가능?
     class InstanceInner {
         int a = 1000;
-        //        static int b = 100;
+//        static int b = 100;
         // final static 은 상수이기에 허용
         final static int CONST = 1;
     }

@@ -47,5 +47,9 @@ public class ObjectsTest {
                         c1 = Character.toLowerCase(c1);
                         c2 = Character.toLowerCase(c2);
          */
+        // compare() 3번째 인자값으로 comparator 에 설정한 대소비교 관련없음 문구를 같이 전달하여 비교를 하도록 한다 (비교에 조건을 추가하는 형식)
+        System.out.println("compare(\"aa\", \"bb\") = " + Objects.compare("aa", "bb", comparator));
+        System.out.println("compare(\"bb\", \"aa\") = " + Objects.compare("bb", "aa", comparator));
+        System.out.println("compare(\"ab\", \"AB\") = " + Objects.compare("ab", "AB", comparator));
     }
 }
