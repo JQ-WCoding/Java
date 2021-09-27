@@ -10,6 +10,8 @@ class Test {
     private int num;
 
     Test(int num) {
+        // 그럼 얘는 무결성을 안지키고 있는걸까?
+        this.num = num;
         setNum(num);
     }
 
@@ -18,6 +20,12 @@ class Test {
     }
 
     public void setNum(int num) {
+        this.num = num;
+    }
+
+    void up(int num) {
+        setNum(num);
+
         this.num = num;
     }
 }
