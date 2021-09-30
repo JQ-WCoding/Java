@@ -18,6 +18,7 @@ public class ShallowDeepCopy {
         System.out.println("c3 : " + circle3);
 
         // 객체 주소값으로 확인 하니 전부 달랐는데 Point 가 중요했음
+        System.out.println(circle1.hashCode());
         System.out.println("c1 hashcode : " + System.identityHashCode(circle1.hashCode()));
         System.out.println(circle1.equals(circle2));
         System.out.println(circle1.equals(circle3));

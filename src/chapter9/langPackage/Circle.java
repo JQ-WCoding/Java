@@ -18,7 +18,7 @@ public class Circle implements Cloneable {
         Object obj = null;
 
         try {
-            obj = super.clone(); // 값만 복사
+            obj = super.clone(); // 주소만
         } catch (CloneNotSupportedException cnse) {
             cnse.printStackTrace();
         }

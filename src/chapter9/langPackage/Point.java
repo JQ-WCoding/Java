@@ -18,7 +18,6 @@ public class Point implements Cloneable {
     }
 
     // 오버라이딩 익명 클래스가 null 이면 -> 해당 clone() 메소드를 호출할 수 있는 부모의 클래스의 clone() 메소드를 사용
-    @Override
     public Object clone() {
         Object obj = null;
         try {
