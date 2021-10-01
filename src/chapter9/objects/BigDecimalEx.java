@@ -41,6 +41,10 @@ public class BigDecimalEx {
         // 다시 한번 보기
         System.out.println(bigDecimal1.divide(bigDecimal2, 2, RoundingMode.HALF_UP));
         System.out.println(bigDecimal1.setScale(2, RoundingMode.HALF_UP));
-        System.out.println(bigDecimal1.divide(bigDecimal2, new MathContext(2, RoundingMode.HALF_UP)));
+
+        System.out.println(bigDecimal1.divide(bigDecimal2, new MathContext(3, RoundingMode.HALF_UP)));
+
+        // 자리수 설정 -> MathContext() 생성자를 통해 자릿수 2, 6이상인경우 반올림하는 정보를 담은 객체를 생성한다
+        System.out.println(new MathContext(2, RoundingMode.HALF_UP));
     }
 }
