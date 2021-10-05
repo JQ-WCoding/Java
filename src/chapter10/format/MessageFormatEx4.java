@@ -6,10 +6,13 @@ import java.util.Scanner;
 
 public class MessageFormatEx4 {
     public static void main(String[] args) throws Exception {
+        // 절대 경로 final 작성
+        final String ROUTE = "D:\\Code\\Java\\src\\chapter10\\format\\";
+
         String fileName = "data4.txt";
         String message = "({0}, {1}, {2}, {3})";
 
-        Scanner scanner = new Scanner(new File(fileName));
+        Scanner scanner = new Scanner(new File(ROUTE + fileName));
 
         String pattern = "{0}, {1}, {2}, {3}";
         MessageFormat messageFormat = new MessageFormat(pattern);
