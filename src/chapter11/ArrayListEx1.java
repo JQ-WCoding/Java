@@ -19,6 +19,7 @@ public class ArrayListEx1 {
 
         // list2는 list1의 1번 0 다음 1 인덱스부터 ~ 3까지 입력되는 값이 생성
         // 1, 2, 3
+        // 생성자에 Collection 을 인자값으로 넘기면 해당 객체가 저장되어 있는 ArrayList 로 생성
         ArrayList list2 = new ArrayList( list1.subList( 1, 4 ) );
         print( list1, list2 );
 
@@ -41,10 +42,13 @@ public class ArrayListEx1 {
         list2.set( 3, "AA" );
         print( list1, list2 );
 
+        // retainAll() 인자값으로 받은 컬렉션과 공통된 것만 남기고 모두 삭제한다
         System.out.println( "list1.retainAll(list2) : " + list1.retainAll( list2 ) );
 
         print( list1, list2 );
 
+        // 반대로 감소의 방식으로 한 이유 : 증가의 방식을 이용할 경우 자리이동으로 인해 올바른 결과를 도출할 수 없다
+        // 따라서, 감소의 방식을 이용해 값이 삭제되어도 인덱스의 변화가 없도록 하게 하였다
         for ( int i = list2.size() - 1; i >= 0; i-- ) {
             // list1에서 list2의 값을 가지고 있으면 list2의 해당 인덱스 값을 제거
             // 1, 3, 4 제거

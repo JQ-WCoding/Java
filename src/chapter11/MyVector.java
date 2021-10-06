@@ -1,9 +1,6 @@
 package chapter11;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class MyVector implements List {
     // 멤버 변수이자 인스턴스 변수

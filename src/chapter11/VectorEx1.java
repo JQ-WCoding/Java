@@ -20,6 +20,7 @@ public class VectorEx1 {
 
         vector.setSize( 10 ); // 값 크기 증가 -> 왜 capacity 도 12로 증가했을까?
         // 기본 Vector 10 증가 -> size 10 증가는 맞음 근데 왜 capacity 는 2? 심지어 전에는 3 크기 차였는데
+        // capacity 가 부족할 경우 해당 값의 2배 크기로 증가된 값으로 초기화된다
         System.out.println( "After setSize( 10 )" );
         print( vector );
 
