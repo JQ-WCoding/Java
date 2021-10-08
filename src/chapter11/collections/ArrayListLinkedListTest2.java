@@ -1,4 +1,4 @@
-package chapter11;
+package chapter11.collections;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
