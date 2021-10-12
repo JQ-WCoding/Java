@@ -10,7 +10,7 @@ public class CharToCode {
         System.out.printf("%c = %d(%#X) %n", alphabet, toNum, toNum);
 
         // char형 hanguel 변수에 '가' 입력
-        char hanguel = '가';
+        char hanguel = 'A';
         // 순서대로 출력하면서 즉시 형변환 작업
         System.out.printf("%c = %d(%#X)%n", hanguel, (int) hanguel, (int) hanguel);
     }

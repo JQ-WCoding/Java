@@ -18,6 +18,9 @@ public class HashMapEx2 {
         Iterator iterator = set.iterator();
 
         // Map.Entry 는 왜 쓰는거지?
+        // Map.Entry 는 인터페이스 -? getValue()와 getKey()메소드를 사용할 수 있는 인터페이스이다.
+        // Map.Entry 는 튜플 (쌍으로 이루어진 데이터)를 생성하기 위해 사용 -> key value 를 쌍으로 값을 저장하기 위함
+        // 튜플 : 셀수있는 수량의 순서있는 열거 또는 어떤 순서를 따르는 요소들의 모음을 튜플(tuple)이라고 합니다
         Map.Entry e;
         while ( iterator.hasNext() ) {
             e = ( Map.Entry ) iterator.next();
