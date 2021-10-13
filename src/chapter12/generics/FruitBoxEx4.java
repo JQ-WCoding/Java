@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.generics;
 
 import java.util.Collections;
 
@@ -18,6 +18,7 @@ public class FruitBoxEx4 {
 
         // 정렬기준이 AppleComp
         // Collections.sort(List<T> list, Comparator<? super T> c)
+        //  public static <T> void sort(List<T> list, Comparator<? super T> c) -> <? super T> 이기 때문에 <? super Apple> -> Apple 의 부모클래스도 가능함을 표현
         Collections.sort(appleBox.getList(), new AppleComp());
         Collections.sort(grapeBox.getList(), new GrapeComp());
 
@@ -25,6 +26,8 @@ public class FruitBoxEx4 {
         System.out.println(grapeBox);
         System.out.println();
 
+        // Collections 정렬 appleBox 와 grapeBox 를 각각 정렬한다
+        // 첫전째 인자값으로 정렬할 list 를 던져주고 두번째 인자값으로 정렬할 기준?방법을 넘겨 정렬한다
         Collections.sort(appleBox.getList(), new FruitComp());
         Collections.sort(grapeBox.getList(), new FruitComp());
 

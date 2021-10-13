@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.generics;
 
 public class FruitBoxEx3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.generics;
 
 import java.util.Comparator;
 

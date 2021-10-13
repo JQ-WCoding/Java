@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.generics;
 
 public class NewGrape extends NewFruit {
     NewGrape(String name, int weight) {
