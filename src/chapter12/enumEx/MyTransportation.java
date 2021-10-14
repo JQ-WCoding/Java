@@ -14,6 +14,20 @@ public abstract class MyTransportation extends MyEnum {
         }
     };
 
+    static final MyTransportation SHIP = new MyTransportation("SHIP", 300) {
+        @Override
+        int fare(int distance) {
+            return distance * BASIC_FARE;
+        }
+    };
+
+    static final MyTransportation AIRPLANE = new MyTransportation("AIRPLANE", 400) {
+        @Override
+        int fare(int distance) {
+            return distance * BASIC_FARE;
+        }
+    };
+
     protected MyTransportation(String name, int basicFare) {
         super(name);
         BASIC_FARE = basicFare;
