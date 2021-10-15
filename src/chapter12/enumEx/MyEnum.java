@@ -3,6 +3,7 @@ package chapter12.enumEx;
 // 추상 클래스인 MyEnum 의 <> 제네릭스 선언으로 MyEnum<T>를 상속받는 형으로 선언 가능하다는 의미
 public abstract class MyEnum<T extends MyEnum<T>> implements Comparable<T> {
     static int id = 0;
+    // getOrdinal()이 있음 -> private 은 어떨까?
     int ordinal;
     String name;
 
