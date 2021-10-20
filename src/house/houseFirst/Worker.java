@@ -1,4 +1,4 @@
-package house;
+package house.houseFirst;
 
 public class Worker {
     public static void print( Show s ) {

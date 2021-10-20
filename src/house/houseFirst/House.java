@@ -1,4 +1,4 @@
-package house;
+package house.houseFirst;
 
 public class House implements Show {
     private String type;

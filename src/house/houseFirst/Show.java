@@ -1,4 +1,4 @@
-package house;
+package house.houseFirst;
 
 public interface Show {
     void printAll();

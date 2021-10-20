@@ -1,4 +1,4 @@
-package house;
+package house.houseFirst;
 
 public class Main {
     public static void main( String[] args ) {
