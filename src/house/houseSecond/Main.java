@@ -2,11 +2,12 @@ package house.houseSecond;
 
 public class Main {
     public static void main( String[] args ) {
-        House house1 = new House();
-        House house2 = new House2();
-        House house3 = new House();
+        Show h1 = new DefaultHouse();
+        Show h2 = new DoorHouse();
+        Show h3 = new DefaultHouse();
 
-
-        Worker.print( house1, house2, house3);
+        h1.print();
+        h2.print();
+        h3.print();
     }
 }
