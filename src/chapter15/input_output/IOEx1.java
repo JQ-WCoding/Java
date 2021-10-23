@@ -1,7 +1,5 @@
 package chapter15.input_output;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.Arrays;

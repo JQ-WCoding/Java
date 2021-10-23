@@ -1,6 +1,5 @@
 package chapter14.streamEx;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.util.Comparator;
 import java.util.List;

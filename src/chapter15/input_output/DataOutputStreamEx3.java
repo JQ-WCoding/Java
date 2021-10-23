@@ -9,7 +9,9 @@ public class DataOutputStreamEx3 {
         // score int 형 배열로
         int[] score = {100, 90, 95, 70, 85, 50};
 
+        // 파일에서 Stream 형태로 값 가져오기
         FileOutputStream fos;
+        // fos 에 초기화된 값을 -> DataOutputStream 으로 변환
         DataOutputStream dos;
         final String ROOT = "D:\\Code\\Java\\src\\chapter15\\input_output\\";
 
@@ -19,6 +21,7 @@ public class DataOutputStreamEx3 {
             dos = new DataOutputStream( fos );
 
             for (int i : score) {
+                // int 형으로 출력
                 dos.writeInt( i );
             }
 
