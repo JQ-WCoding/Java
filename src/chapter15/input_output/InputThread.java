@@ -33,6 +33,7 @@ public class InputThread extends Thread {
         return pr;
     }
 
+    // connect() 메소드의 PipedWriter 와 PipedReader 를 통해, 상호간의 메세지를 주고 받는다.
     public void connect(PipedWriter pw) {
         // PipedWriter 와 PipedReader 연결하기
         try {
