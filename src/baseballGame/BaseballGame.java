@@ -20,6 +20,7 @@ public class BaseballGame extends Game {
 
         while (strike != 4) {
             input();
+            System.out.println( "Mine : " + Arrays.toString( myBall ) );
             checking();
             System.out.println( "Strike: " + strike + " Ball: " + ball );
         }
@@ -40,7 +41,7 @@ public class BaseballGame extends Game {
     private boolean checkDuplicate( int[] arr ) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if (BALL[i] == BALL[j]) {
+                if (arr[i] == arr[j]) {
                     return true;
                 }
             }
@@ -81,6 +82,5 @@ public class BaseballGame extends Game {
             input();
         }
 
-        System.out.println( "Mine : " + Arrays.toString( myBall ) );
     }
 }
