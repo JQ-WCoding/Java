@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class BaseballGame extends Game {
     private final int SIZE = 4;
-    private final int[] BALL = new int[SIZE];
+    private final int[] COM_BALL = new int[SIZE];
     private int[] myBall = new int[SIZE];
-    int strike;
-    int ball;
+    private int strike;
+    private int ball;
 
     public BaseballGame() {
         setBall();
@@ -16,24 +16,25 @@ public class BaseballGame extends Game {
     @Override
     public void run() {
         setBall();
-        System.out.println( "Com : " + Arrays.toString( BALL ) );
+        System.out.println( "Com : " + Arrays.toString( COM_BALL ) );
 
         while (strike != 4) {
             input();
             System.out.println( "Mine : " + Arrays.toString( myBall ) );
-            checking();
+            checkBall();
             System.out.println( "Strike: " + strike + " Ball: " + ball );
         }
 
+        scanner.close();
         System.exit( 0 );
     }
 
     private void setBall() {
         for (int i = 0; i < SIZE; i++) {
-            BALL[i] = (int) ( Math.random() * 10 );
+            COM_BALL[i] = (int) ( Math.random() * 10 );
         }
 
-        if (checkDuplicate( BALL )) {
+        if (checkDuplicate( COM_BALL )) {
             setBall();
         }
     }
@@ -49,12 +50,12 @@ public class BaseballGame extends Game {
         return false;
     }
 
-    private void checking() {
+    private void checkBall() {
         ball = 0;
         strike = 0;
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                if (BALL[i] == myBall[j]) {
+                if (COM_BALL[i] == myBall[j]) {
                     if (i == j) {
                         strike++;
                     } else {
@@ -81,6 +82,5 @@ public class BaseballGame extends Game {
         if (checkDuplicate( myBall )) {
             input();
         }
-
     }
 }
