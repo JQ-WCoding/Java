@@ -9,10 +9,6 @@ public class BaseballGame extends Game {
     private int strike;
     private int ball;
 
-    public BaseballGame() {
-        setBall();
-    }
-
     @Override
     public void run() {
         setBall();
