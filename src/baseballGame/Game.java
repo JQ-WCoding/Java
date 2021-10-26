@@ -1,17 +1,17 @@
 package baseballGame;
 
-import java.util.Scanner;
+public class Game{
+    protected final int SIZE = 4;
 
-public abstract class Game implements RunGame {
-    protected Scanner scanner = new Scanner( System.in );
-
-    protected void systemCheck( String str ) {
-        if (str.equals( "-1" )) {
-            System.exit( 0 );
-        } else if (str.equals( "11" )) {
-            run();
+    protected boolean checkDuplicate( int[] arr ) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    return true;
+                }
+            }
         }
+        return false;
     }
 
-    protected abstract void input();
 }
