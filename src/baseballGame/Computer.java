@@ -1,7 +1,6 @@
 package baseballGame;
 
 public class Computer extends Game {
-    private final int[] COM_BALL = new int[SIZE];
 
     public Computer() {
         setBall();
@@ -9,10 +8,10 @@ public class Computer extends Game {
 
     private void setBall() {
         for (int i = 0; i < SIZE; i++) {
-            COM_BALL[i] = (int) ( Math.random() * 10 );
+            balls[i] = (int) ( Math.random() * 10 );
         }
 
-        if (checkDuplicate( COM_BALL )) {
+        if (checkDuplicate( balls )) {
             setBall();
         }
     }
@@ -22,7 +21,7 @@ public class Computer extends Game {
         int strike = 0;
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                if (COM_BALL[i] == myBall[j]) {
+                if (balls[i] == myBall[j]) {
                     if (i == j) {
                         strike++;
                     } else {

@@ -4,13 +4,12 @@ package baseballGame;
 import java.util.Scanner;
 
 public class BaseballGame extends Game implements RunGame {
-    private final int[] myBall = new int[SIZE];
     private final Computer COM = new Computer();
 
     public void run() {
         do {
             input();
-        } while (COM.checkNum( myBall ));
+        } while (COM.checkNum( balls ));
     }
 
     private void input() {
@@ -25,10 +24,10 @@ public class BaseballGame extends Game implements RunGame {
 
     private void inputNum( String[] inputInt ) {
         for (int i = 0; i < SIZE; i++) {
-            myBall[i] = Integer.parseInt( inputInt[i] );
+            balls[i] = Integer.parseInt( inputInt[i] );
         }
 
-        if (checkDuplicate( myBall )) {
+        if (checkDuplicate( balls )) {
             input();
         }
     }
