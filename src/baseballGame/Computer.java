@@ -28,6 +28,7 @@ public class Computer extends Game {
                     } else {
                         ball++;
                     }
+                    break;
                 }
             }
         }
@@ -36,7 +37,7 @@ public class Computer extends Game {
         return strike != 4;
     }
 
-    private void print(int strike, int ball){
+    private void print( int strike, int ball ) {
         System.out.println( "Strike : " + strike + " Ball : " + ball );
     }
 }

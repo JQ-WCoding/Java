@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>baseballGame</OriginalElement>
+  <nodes>
+    <node x="0.0" y="166.5">baseballGame.Computer</node>
+    <node x="0.0" y="374.0">baseballGame.Main</node>
+    <node x="205.0" y="155.0">baseballGame.BaseballGame</node>
+    <node x="19.0" y="0.0">baseballGame.Game</node>
+    <node x="250.0" y="24.0">baseballGame.RunGame</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="baseballGame.BaseballGame" target="baseballGame.Game" relationship="GENERALIZATION">
+      <point x="-45.0" y="-87.0" />
+      <point x="250.0" y="130.0" />
+      <point x="124.5" y="130.0" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="baseballGame.BaseballGame" target="baseballGame.RunGame" relationship="REALIZATION">
+      <point x="45.0" y="-87.0" />
+      <point x="340.0" y="130.0" />
+      <point x="308.0" y="130.0" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="baseballGame.Computer" target="baseballGame.Game" relationship="GENERALIZATION">
+      <point x="0.0" y="-75.5" />
+      <point x="92.5" y="130.0" />
+      <point x="124.5" y="130.0" />
+      <point x="0.0" y="52.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="312.5" y="227.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

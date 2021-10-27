@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class BaseballGame extends Game implements RunGame {
     private final int[] myBall = new int[SIZE];
-    Computer com = new Computer();
+    private final Computer COM = new Computer();
 
     public void run() {
         do {
             input();
-        } while (com.checkNum( myBall ));
+        } while (COM.checkNum( myBall ));
     }
 
     private void input() {
