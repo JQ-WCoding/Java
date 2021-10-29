@@ -7,7 +7,7 @@
     <node x="127.09375000000001" y="564.0">baseballGame.Main</node>
     <node x="53.375" y="361.0">baseballGame.BaseballGame</node>
     <node x="41.135416666666686" y="0.0">baseballGame.Game</node>
-    <node x="206.0" y="215.0">baseballGame.RunGame</node>
+    <node x="206.0" y="208.0">baseballGame.RunGame</node>
   </nodes>
   <notes />
   <edges>
@@ -58,9 +58,9 @@
       <point x="-46.25" y="63.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="1.2999999999999998" showDependencies="true" x="161.0" y="322.5" />
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="161.0" y="322.5" />
   <SelectedNodes>
-    <node>baseballGame.Computer</node>
+    <node>baseballGame.RunGame</node>
   </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
