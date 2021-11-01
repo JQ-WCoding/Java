@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>newBaseball</OriginalElement>
+  <nodes>
+    <node x="223.515625" y="0.0">newBaseball.Player</node>
+    <node x="132.34895833333334" y="617.0">newBaseball.Main</node>
+    <node x="223.125" y="414.0">newBaseball.BaseballGame</node>
+    <node x="136.0" y="178.0">newBaseball.Computer</node>
+    <node x="341.0" y="201.0">newBaseball.User</node>
+    <node x="0.0" y="236.5">newBaseball.GameRun</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="newBaseball.BaseballGame" target="newBaseball.Computer" relationship="TO_ONE">
+      <point x="0.0" y="-75.5" />
+      <point x="302.625" y="393.0" />
+      <point x="323.390625" y="393.0" />
+      <point x="323.390625" y="383.0" />
+      <point x="182.25" y="383.0" />
+      <point x="-46.25" y="87.0" />
+    </edge>
+    <edge source="newBaseball.Main" target="newBaseball.GameRun" relationship="DEPENDENCY">
+      <point x="-48.25" y="-52.0" />
+      <point x="180.59895833333334" y="591.0" />
+      <point x="52.75" y="591.0" />
+      <point x="52.75" y="393.0" />
+      <point x="29.0" y="393.0" />
+      <point x="-29.0" y="28.5" />
+    </edge>
+    <edge source="newBaseball.BaseballGame" target="newBaseball.Computer" relationship="CREATE">
+      <point x="53.0" y="-75.5" />
+      <point x="355.625" y="393.0" />
+      <point x="333.390625" y="393.0" />
+      <point x="333.390625" y="373.0" />
+      <point x="274.75" y="373.0" />
+      <point x="46.25" y="87.0" />
+    </edge>
+    <edge source="newBaseball.Computer" target="newBaseball.Player" relationship="GENERALIZATION">
+      <point x="0.0" y="-87.0" />
+      <point x="228.5" y="153.0" />
+      <point x="329.015625" y="153.0" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="newBaseball.User" target="newBaseball.Player" relationship="GENERALIZATION">
+      <point x="0.0" y="-64.0" />
+      <point x="431.0" y="153.0" />
+      <point x="329.015625" y="153.0" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="newBaseball.BaseballGame" target="newBaseball.User" relationship="TO_ONE">
+      <point x="0.0" y="-75.5" />
+      <point x="302.625" y="393.0" />
+      <point x="323.390625" y="393.0" />
+      <point x="323.390625" y="383.0" />
+      <point x="386.0" y="383.0" />
+      <point x="-45.0" y="64.0" />
+    </edge>
+    <edge source="newBaseball.Main" target="newBaseball.BaseballGame" relationship="CREATE">
+      <point x="48.25" y="-52.0" />
+      <point x="277.09895833333337" y="591.0" />
+      <point x="302.625" y="591.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="newBaseball.BaseballGame" target="newBaseball.GameRun" relationship="REALIZATION">
+      <point x="-53.0" y="-75.5" />
+      <point x="249.625" y="393.0" />
+      <point x="87.0" y="393.0" />
+      <point x="29.0" y="28.5" />
+    </edge>
+    <edge source="newBaseball.BaseballGame" target="newBaseball.User" relationship="CREATE">
+      <point x="53.0" y="-75.5" />
+      <point x="355.625" y="393.0" />
+      <point x="333.390625" y="393.0" />
+      <point x="333.390625" y="373.0" />
+      <point x="476.0" y="373.0" />
+      <point x="45.0" y="64.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="263.0" y="360.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

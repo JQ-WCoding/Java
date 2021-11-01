@@ -7,9 +7,7 @@ public class BaseballGame extends Game implements RunGame {
     private final Computer COM = new Computer();
 
     public void run() {
-        do {
-            input();
-        } while ( COM.checkNum( balls ) );
+        gameStart();
     }
 
     private void input() {
@@ -22,13 +20,19 @@ public class BaseballGame extends Game implements RunGame {
         inputNum( inputInt );
     }
 
-    private void inputNum(String[] inputInt) {
-        for ( int i = 0; i < SIZE; i++ ) {
+    private void inputNum( String[] inputInt ) {
+        for (int i = 0; i < SIZE; i++) {
             balls[i] = Integer.parseInt( inputInt[i] );
         }
 
-        if ( checkDuplicate( balls ) ) {
+        if (checkDuplicate( balls )) {
             input();
         }
+    }
+
+    private void gameStart() {
+        do {
+            input();
+        } while (COM.checkNum( balls ));
     }
 }
