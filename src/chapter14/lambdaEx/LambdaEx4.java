@@ -14,14 +14,18 @@ public class LambdaEx4 {
             list.add( i );
         }
 
+        // list 내부에 이미 0 ~ 9 까지의 값이 존재한다
+        // forEach 메소드는 ArrayList 내에 선언되어 있다. 내부적으로 반복문을 index 0 부터 max 까지 진행한다
         // forEach 메소드에 바로 사용
         list.forEach( integer -> System.out.print( integer + "," ) );
         System.out.println();
 
         // removeIf() 해당 값에 대해 제거하는 방법
         list.removeIf( x -> x % 2 == 0 || x % 3 == 0 );
+        // 2로 나누어지거나 3으로 나누어지는 수의 경우 제거한다
         System.out.println( list );
 
+        // 전부 10 곱하기 값으로 교체한다
         list.replaceAll( integer -> integer * 10 );
         System.out.println( list );
 
