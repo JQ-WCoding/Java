@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LambdaEx4 {
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         // ArrayList Integer 형으로 list 선언
         ArrayList<Integer> list = new ArrayList<>();
 
         // 해당 배열에 0 ~ 9 까지 값 초기화
-        for (int i = 0; i < 10; i++) {
+        for ( int i = 0; i < 10; i++ ) {
             list.add( i );
         }
 
@@ -41,7 +41,7 @@ public class LambdaEx4 {
         // forEach() 메소드 정의 -> 인자값을 통해 k 와 v 를 출력한다
         // default 메소드로 이미 정의되어 있지만 -> 새롭게 정의 해당 인자값으로 k, v를 필요로 한다
         // key , value 를 각각 정의해둘 수 있음
-        map.forEach( ( k, v ) -> System.out.print( "{" + k + "," + v + "}," ) );
+        map.forEach( (k, v) -> System.out.print( "{" + k + "," + v + "}," ) );
         System.out.println();
 
         // Runnable 함수형 인터페이스에는 run() 메소드가 정의되어 있다 -> 기본적으로 많이 사용하는 함수형 인터페이스에 대해서는 이미 정의되어 있음으로

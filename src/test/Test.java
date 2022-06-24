@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Test {
@@ -15,5 +16,8 @@ public class Test {
 
         System.out.println( "collect = " + collect );
 
+        Collections.reverse( arr );
+
+        System.out.println( "arr = " + arr );
     }
 }
