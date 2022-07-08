@@ -24,6 +24,5 @@ public class StackAndQueue {
         while (!queue.isEmpty()) {
             System.out.println( "queue = " + queue.poll() );
         }
-
     }
 }
