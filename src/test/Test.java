@@ -1,13 +1,14 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
         Integer[] integer = new Integer[]{5, 2, 1, 4, 3};
-        List<Integer> arr = new ArrayList<>( List.of( integer ) );
+        List<Integer> arr = new ArrayList<>( Arrays.asList( integer ) );
 
         List<Integer> collect = arr.stream()
                 .collect( ArrayList::new,
