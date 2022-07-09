@@ -3,10 +3,10 @@ package toby.dao;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class UserDAO {
+public class UserDao {
     private final ConnectionMaker connectionMaker;
 
-    public UserDAO(ConnectionMaker connectionMaker) {
+    public UserDao(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
 
