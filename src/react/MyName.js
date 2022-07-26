@@ -1,6 +1,6 @@
-import React from 'react';
+import {Component} from 'react';
 
-class MyName extends React.Component {
+class MyName extends Component {
     static defaultProps = {
         name: '기본이름',
     };
@@ -13,3 +13,5 @@ class MyName extends React.Component {
         );
     }
 }
+
+export default MyName;
