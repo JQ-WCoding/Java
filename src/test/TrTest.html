@@ -7,7 +7,7 @@
 <body>
 <table>
     <li style="list-style: none;">
-        <table style="width: 100%;">
+        <table style="width: 100%;" id="result_table">
             <tr>
                 <td rowspan="5">5</td>
             </tr>
@@ -28,4 +28,11 @@
     </li>
 </table>
 </body>
+<script>
+    // click 시, 확인창 받기
+    document.getElementById('result_table').addEventListener('click', () => {
+        let inputQty = Number(prompt('수량입력', 0));
+        alert(inputQty);
+    });
+</script>
 </html>
