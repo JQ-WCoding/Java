@@ -7,9 +7,9 @@
 <body>
 <table>
     <li style="list-style: none;">
-        <table style="width: 100%;" id="result_table">
-            <tr>
-                <td rowspan="5">5</td>
+        <table style="width: 100%; border: 1px solid" id="result_table">
+            <tr style="border: 1px solid">
+                <td rowspan="5" style="font-size:20px;">5</td>
             </tr>
             <tr>
                 <td>입고예정일자</td>
@@ -28,11 +28,14 @@
     </li>
 </table>
 </body>
+
 <script>
     // click 시, 확인창 받기
-    document.getElementById('result_table').addEventListener('click', () => {
-        let inputQty = Number(prompt('수량입력', 0));
-        alert(inputQty);
-    });
+    document.getElementById( 'result_table' ).addEventListener( 'click', () => {
+        let inputQty = Number( prompt( '수량입력', 0 ) );
+        alert( '입력하신 수량은>>>>>>>' + inputQty );
+
+        console.log( inputQty );
+    } );
 </script>
 </html>
