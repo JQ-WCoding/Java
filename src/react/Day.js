@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 const user = {
     firstName: 'John',
     lastName : 'Lee',
+    city     : 'Seoul',
 };
 
 function today() {
@@ -19,6 +20,7 @@ class Day extends Component {
         return <div>
             <h1>Hello, { user.firstName }{ user.lastName }</h1>
             <h4>Today : { today() }</h4>
+            <h5>{ user.city }</h5>
         </div>;
     }
 }
