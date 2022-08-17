@@ -1,8 +1,8 @@
 package test.thisIsJava;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class Question {
     public static void main( String[] args ) {
@@ -17,12 +17,15 @@ public class Question {
         float result2 = 5 + floatValue;
         double result3 = 5 + doubleValue;
 
-        List<Object> results = new ArrayList<>();
-
-        results.add( result1 );
-        results.add( result2 );
-        results.add( result3 );
+        List<Object> results = new ArrayList<>( Arrays.asList( result1, result2, result3 ) );
+        List<Object> results2 = new ArrayList<Object>() {{
+            add( result1 );
+            add( result2 );
+            add( result3 );
+        }};
 
         results.forEach( System.out::println );
+
+        results2.forEach( System.out::println );
     }
 }
