@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Question {
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         byte byteValue = 10;
         float floatValue = 2.5F;
         double doubleValue = 2.5;
@@ -18,6 +18,9 @@ public class Question {
         double result3 = 5 + doubleValue;
 
         List<Object> results = new ArrayList<>( Arrays.asList( result1, result2, result3 ) );
+
+        List<Object> results3 = Arrays.asList( result1, result2, result3 );
+
         List<Object> results2 = new ArrayList<Object>() {{
             add( result1 );
             add( result2 );
@@ -27,5 +30,7 @@ public class Question {
         results.forEach( System.out::println );
 
         results2.forEach( System.out::println );
+
+        results3.forEach( System.out::println );
     }
 }
