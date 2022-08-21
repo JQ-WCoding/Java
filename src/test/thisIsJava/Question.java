@@ -21,7 +21,7 @@ public class Question {
 
         List<Object> results3 = Arrays.asList( result1, result2, result3 );
 
-        List<Object> results2 = new ArrayList<Object>() {{
+        List<Object> results2 = new ArrayList<>() {{
             add( result1 );
             add( result2 );
             add( result3 );
