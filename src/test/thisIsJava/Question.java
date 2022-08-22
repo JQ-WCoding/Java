@@ -19,18 +19,17 @@ public class Question {
 
         List<Object> results = new ArrayList<>( Arrays.asList( result1, result2, result3 ) );
 
-        List<Object> results3 = Arrays.asList( result1, result2, result3 );
+        // 반환형태가 list이기 때문에 new ArrayList<>()를 통해 새로 선언할 이유가 크게 없음 선언타입이 ArrayList이면 모르겠지만 실 구현체를 타입으로 선언하기 쉽지 않음
+        List<Object> results2 = Arrays.asList( result1, result2, result3 );
 
-        List<Object> results2 = new ArrayList<>() {{
+        List<Object> results3 = new ArrayList() {{
             add( result1 );
             add( result2 );
             add( result3 );
         }};
 
         results.forEach( System.out::println );
-
         results2.forEach( System.out::println );
-
         results3.forEach( System.out::println );
     }
 }
