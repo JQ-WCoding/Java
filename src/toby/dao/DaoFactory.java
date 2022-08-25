@@ -8,6 +8,7 @@ public class DaoFactory {
         return new UserDao( connectionMaker() );
     }
 
+    // 각 Dao 별 연결을 따로 설정
     public AccountDao accountDao() {
         return new AccountDao( connectionMaker() );
     }
