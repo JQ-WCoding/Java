@@ -7,9 +7,12 @@ class MyName extends Component {
 
     render() {
         return (
-            <div>
-                안녕하세요! 제이름은 <b>{ this.props.name }</b>입니다.
-            </div>
+            <>
+                {/* jsx 내부에서 주석을 작성할 때는 이런 형식으로 주석을 작성함 */}
+                <div>
+                    안녕하세요! 제이름은 <b>{this.props.name}</b>입니다.
+                </div>
+            </>
         );
     }
 }
