@@ -16,7 +16,6 @@ class MyName extends Component {
             /* 외부에서는 다시 주석을 이런식으로 답니다 */
         );
     }
-    // 현재 트랜드 : 간단하게 js 공부하거나 연습하기 위해서 따로 프로젝트를 세팅하지 않고 node.js 를 이용하여 간단하게 바로 연습하는 편
 }
 
 export default MyName;
