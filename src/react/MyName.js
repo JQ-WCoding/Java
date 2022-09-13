@@ -7,9 +7,14 @@ class MyName extends Component {
 
     render() {
         return (
-            <div>
-                안녕하세요! 제이름은 <b>{ this.props.name }</b>입니다.
-            </div>
+            <>
+                {/* jsx 내부에서 주석을 작성할 때는 이런 형식으로 주석을 작성함 */}
+                <div>
+                    안녕하세요! 제이름은 <b>{this.props.name}</b>입니다. {/*내부 끝까지 주석은 이런식으로 사용됨*/}
+                    {/*porps 는 현재 doc의 props 를 의미*/}
+                </div>
+            </>
+            /* 외부에서는 다시 주석을 이런식으로 답니다 */
         );
     }
 }
