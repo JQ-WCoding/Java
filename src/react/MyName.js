@@ -19,4 +19,5 @@ class MyName extends Component {
     }
 }
 
+/* export 를 통해 render 할때 dom에 뿌려줌*/
 export default MyName;
