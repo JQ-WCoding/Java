@@ -17,8 +17,13 @@ function printThree() {
     console.log( 3 );
 }
 
+/* printOne -> Two -> Three 의도했지만
+ one -> three -> two 순서로 실행됨 */
+
+
 
 // Stack 의 예시
+// 스택은 예정된 순서대로 진행되는 형식
 functionA();
 functionC();
 
