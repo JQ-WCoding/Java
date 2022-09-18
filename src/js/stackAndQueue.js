@@ -24,6 +24,7 @@ function printThree() {
 
 // Stack 의 예시
 // 스택은 예정된 순서대로 진행되는 형식
+// 기본적으로 스택의 형식으로 진행
 functionA();
 functionC();
 
