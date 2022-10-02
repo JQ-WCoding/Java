@@ -14,3 +14,14 @@ let arrayOld = [];
 array1.forEach( i => arrayOld.push( i ) );
 array2.forEach( i => arrayOld.push( i ) );
 console.log( arrayOld );
+
+let arrayOld2 = [];
+for ( let i = 0; i < array1.length; i++ ) {
+    arrayOld2.push( array1[i] );
+}
+
+for ( let i = 0; i < array2.length; i++ ) {
+    arrayOld2.push( array2[i] );
+}
+
+console.log( arrayOld2 );
