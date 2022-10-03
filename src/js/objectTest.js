@@ -25,3 +25,8 @@ for ( let i = 0; i < array2.length; i++ ) {
 }
 
 console.log( arrayOld2 );
+
+let arrayList = [];
+arrayOld.filter( i => i / 2 === 1 ).map( arrayList.push );
+
+console.log( arrayList );
