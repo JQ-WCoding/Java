@@ -1,0 +1,7 @@
+nginx -v
+
+systemctl start nginx
+systemctl stop nginx
+systemctl restart nginx
+
+netstat -tlnp
