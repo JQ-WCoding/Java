@@ -17,6 +17,12 @@ const pressButton = () => {
     console.log( tagName );
     setText( 'Pressed' );
     setShowText( false );
+
+    setting();
+}
+
+const setting = () => {
+    this.text( 'hi' );
 }
 
 class Day extends Component {
