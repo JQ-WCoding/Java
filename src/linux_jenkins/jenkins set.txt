@@ -1,0 +1,5 @@
+jenkins 사용법 외
+
+jenkins, gradle 필요
+
+build 후 mv 를 통해 프로젝트 이동 가능 모든건 script를 작성하여 이용가능
