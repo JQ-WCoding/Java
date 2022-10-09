@@ -18,11 +18,11 @@ const pressButton = () => {
     setText( 'Pressed' );
     setShowText( false );
 
-    setting();
+    setting( 'Pressed' );
 }
 
-const setting = () => {
-    this.text( 'hi' );
+const setting = ( text ) => {
+    this.text( text );
 }
 
 class Day extends Component {
