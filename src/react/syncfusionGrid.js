@@ -21,8 +21,13 @@ const pressButton = () => {
     setting( 'Pressed' );
 }
 
+const endBuild = () => {
+    console.log( 'end build' );
+}
+
 const setting = ( text ) => {
     this.text( text );
+    endBuild();
 }
 
 class Day extends Component {
