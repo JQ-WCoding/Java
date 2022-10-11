@@ -23,6 +23,7 @@ const pressButton = () => {
 
 const endBuild = () => {
     console.log( 'end build' );
+    alert( 'Impact' );
 }
 
 const setting = ( text ) => {
