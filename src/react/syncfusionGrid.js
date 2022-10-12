@@ -19,6 +19,11 @@ const pressButton = () => {
     setShowText( false );
 
     setting( 'Pressed' );
+    afterBuilding();
+}
+
+function afterBuilding() {
+    console.log( 'Old Version of Function' );
 }
 
 const endBuild = () => {
