@@ -20,6 +20,11 @@ const pressButton = () => {
 
     setting( 'Pressed' );
     afterBuilding();
+    final();
+}
+
+const final = () => {
+    this.inner1 = 'rehi';
 }
 
 function afterBuilding() {
