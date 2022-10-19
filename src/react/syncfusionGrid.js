@@ -41,7 +41,12 @@ const setting = ( text ) => {
     endBuild();
 }
 
+const changed = () => {
+    console.log( 'changed' );
+}
+
 /* 렌더링 시점 => 해당 컴포넌트에 대해 읽고 그에 맞게 input 속성 등을 넣어 준다. */
+
 /* 렌더링 이후에 추가적인 행위는 함수를 통해 건들인다. */
 class Day extends Component {
     render() {
@@ -50,6 +55,8 @@ class Day extends Component {
             <h2>{test.inner2}</h2>
             <div>{text}</div>
             <div>{showText}</div>
+
+            <input type="text" onChange={changed}/>
 
             <button onClick={pressButton}>plus tags button</button>
         </div>;
