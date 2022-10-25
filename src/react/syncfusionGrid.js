@@ -63,6 +63,16 @@ class Day extends Component {
     }
 }
 
+class SplitterLay extends Component {
+    render() {
+        return (
+            <div>
+                splitter layout 상속을 통해 사용하기
+            </div>
+        );
+    }
+}
+
 ReactDom.render(
     <Day/>,
     document.getElementById( 'root' ),
