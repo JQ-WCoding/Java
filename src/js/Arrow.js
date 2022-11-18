@@ -30,3 +30,6 @@ const sample = {
 }
 
 const {code, style, command} = sample;
+
+const [nnew] = ['sample', 'test'];
+console.log( nnew );
